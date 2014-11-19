@@ -16,13 +16,13 @@ do OnGameModeInit() případně OnFilterScriptInit() uvedeme následující:
 	SetStatName(3, "nejvyšší rychlost");
 	
 	statsCommit();
-~~
+
 Jedná se o inicializaci, takže by se měla dodržet konvence o "very first", tedy jako první pokud možno.
 
 Poté je potřeba ošetřit zavření databáze. To učiníme v OnGameModeExit() případně OnFilterScriptExit() ..
 ~~
 statsExit();
-~~
+
 
 Pak už se dá jen jednoduše pracovat. Include využívá hojně PlayerVariables a to s prefixem stats_. Do těchto proměnných si ukládá Cache. Cache slouží k tomu, aby se redukovali co nejvíce režijní náklady na databázi.
 
