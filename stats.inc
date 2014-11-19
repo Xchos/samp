@@ -156,6 +156,7 @@ public SetStatName(statid, name[]){
 	format(eString, MAX_STATS_NAME_LENGTH, "%s", statsEscape(name));
 	new query[MAX_STATS_QUERY_LENGTH];
 	format(query, MAX_STATS_QUERY_LENGTH, "INSERT OR REPLACE INTO stats (id,name) VALUES (%d, '%s');", statid, eString);
+	statsQuery(query);
 }
 
 stock GetStatName(statid){
