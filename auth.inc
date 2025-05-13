@@ -5,7 +5,7 @@
 
 		A SA:MP library for saving player progress into database for statistics.
 
-		Library originally written by Lukas Zelenka: lukas.zelenka974@gmail.com
+		Library originally written by Lukas Zelenka
 
 
 ==============================================================================*/
